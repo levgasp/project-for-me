@@ -2,9 +2,9 @@ import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
-from PythonPytestHomework435.Selenium_commands.POM.pages.customer_service_center_page import CustomerServicePage
+from PythonPytestHomework435.Selenium_commands.POM.pages.football_federation_of_armenia import FFofArmenia
+from PythonPytestHomework435.Selenium_commands.POM.pages.national_associations_page import NationalAssociations
 from Selenium_commands.POM.pages.home_page import HomePage
-from Selenium_commands.POM.pages.shoes_page import ShoesPage
 from Selenium_commands.TestingData import test_data
 
 driver = None
@@ -65,8 +65,8 @@ def get_driver(request, get_browser):
     driver.implicitly_wait(10)
     # Add in here each page from the POM in order to initialize the driver for each one.
     request.cls.homepage = HomePage(driver)
-    request.cls.shoespage = ShoesPage(driver)
-    request.cls.customerservice_center_page = CustomerServicePage(driver)
+    request.cls.nationalassociationspage = NationalAssociations(driver)
+    request.cls.footballfederationpage = FFofArmenia(driver)
     driver.get(test_data.url)
     yield driver
     driver.quit()

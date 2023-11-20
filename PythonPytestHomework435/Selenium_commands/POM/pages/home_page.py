@@ -7,11 +7,7 @@ class HomePage(Helpers):
     def __init__(self, driver):
         super().__init__(driver)
 
-    shoes_section =(By.LINK_TEXT, 'SHOES')
-    customer_srv_cntr = (By.CLASS_NAME, 'ka-z')
+    national_associations_loc = (By.LINK_TEXT, 'National Associations')
 
-    def click_on_shoes_section(self):
-        self.find_and_click(self.shoes_section)
-
-    def click_on_customer_srv_cntr_section(self):
-        self.find_and_click(self.customer_srv_cntr)
+    def click_on_national_associations_section(self):
+        self.find_and_click(self.national_associations_loc)
