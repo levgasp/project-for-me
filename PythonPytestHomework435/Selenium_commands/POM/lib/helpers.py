@@ -26,6 +26,10 @@ class Helpers:
         self.driver.execute_script("arguments[0].scrollIntoView();", elem)
         elem.click()
 
+    def find_and_click_without_scrolling(self, loc, timeout=10):
+        elem = self.find(loc, timeout)
+        elem.click()
+
     def find_and_send_keys(self, loc, inp_text, timeout=10):
         elem = self.find(loc, timeout)
         self.driver.execute_script("arguments[0].scrollIntoView();", elem)
