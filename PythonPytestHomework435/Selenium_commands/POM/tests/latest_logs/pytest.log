@@ -1,0 +1,59 @@
+17:48:57 DEBUG Selenium Manager binary found at: C:\Users\gaspa\PycharmProjects\pythonProject\venv\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
+17:48:57 DEBUG Executing process: C:\Users\gaspa\PycharmProjects\pythonProject\venv\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --debug --output json
+17:48:58 DEBUG chromedriver not found in PATH
+17:48:58 DEBUG chrome detected at C:\Program Files\Google\Chrome\Application\chrome.exe
+17:48:58 DEBUG Running command: wmic datafile where name='C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' get Version /value
+17:48:58 DEBUG Output: "\r\r\n\r\r\nVersion=120.0.6099.201\r\r\n\r\r\n\r\r\n\r"
+17:48:58 DEBUG Detected browser: chrome 120.0.6099.201
+17:48:58 DEBUG Discovering versions from https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json
+17:48:58 DEBUG Required driver: chromedriver 120.0.6099.109
+17:48:58 DEBUG chromedriver 120.0.6099.109 already in the cache
+17:48:58 DEBUG Driver path: C:\Users\gaspa\.cache\selenium\chromedriver\win64\120.0.6099.109\chromedriver.exe
+17:48:58 DEBUG Browser path: C:\Program Files\Google\Chrome\Application\chrome.exe
+17:48:58 DEBUG Using driver at: C:\Users\gaspa\.cache\selenium\chromedriver\win64\120.0.6099.109\chromedriver.exe
+17:48:58 DEBUG Started executable: `C:\Users\gaspa\.cache\selenium\chromedriver\win64\120.0.6099.109\chromedriver.exe` in a child process with pid: 22396
+17:48:59 DEBUG POST http://localhost:52258/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"extensions": [], "binary": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe", "args": ["--start-maximized"]}}}}
+17:48:59 DEBUG Starting new HTTP connection (1): localhost:52258
+17:48:59 DEBUG http://localhost:52258 "POST /session HTTP/1.1" 200 0
+17:48:59 DEBUG Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"120.0.6099.201","chrome":{"chromedriverVersion":"120.0.6099.109 (3419140ab665596f21b385ce136419fde0924272-refs/branch-heads/6099@{#1483})","userDataDir":"C:\\Users\\gaspa\\AppData\\Local\\Temp\\scoped_dir22396_1067839695"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:52263"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"8219da76f02653fa3aec5285e4445552"}} | headers=HTTPHeaderDict({'Content-Length': '884', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+17:48:59 DEBUG Finished Request
+17:48:59 DEBUG POST http://localhost:52258/session/8219da76f02653fa3aec5285e4445552/timeouts {"implicit": 10000}
+17:48:59 DEBUG http://localhost:52258 "POST /session/8219da76f02653fa3aec5285e4445552/timeouts HTTP/1.1" 200 0
+17:48:59 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+17:48:59 DEBUG Finished Request
+17:48:59 DEBUG POST http://localhost:52258/session/8219da76f02653fa3aec5285e4445552/url {"url": "https://www.uefa.com/"}
+17:49:03 DEBUG http://localhost:52258 "POST /session/8219da76f02653fa3aec5285e4445552/url HTTP/1.1" 200 0
+17:49:03 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+17:49:03 DEBUG Finished Request
+17:49:03 DEBUG POST http://localhost:52258/session/8219da76f02653fa3aec5285e4445552/element {"using": "link text", "value": "National Associations"}
+17:49:03 DEBUG http://localhost:52258 "POST /session/8219da76f02653fa3aec5285e4445552/element HTTP/1.1" 200 0
+17:49:03 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"6DA342D108E1A58DC11C293E1490CB24_element_62"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+17:49:03 DEBUG Finished Request
+17:49:03 DEBUG POST http://localhost:52258/session/8219da76f02653fa3aec5285e4445552/execute/sync {"script": "arguments[0].scrollIntoView();", "args": [{"element-6066-11e4-a52e-4f735466cecf": "6DA342D108E1A58DC11C293E1490CB24_element_62"}]}
+17:49:03 DEBUG http://localhost:52258 "POST /session/8219da76f02653fa3aec5285e4445552/execute/sync HTTP/1.1" 200 0
+17:49:03 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+17:49:03 DEBUG Finished Request
+17:49:03 DEBUG POST http://localhost:52258/session/8219da76f02653fa3aec5285e4445552/element/6DA342D108E1A58DC11C293E1490CB24_element_62/click {}
+17:49:05 DEBUG http://localhost:52258 "POST /session/8219da76f02653fa3aec5285e4445552/element/6DA342D108E1A58DC11C293E1490CB24_element_62/click HTTP/1.1" 200 0
+17:49:05 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+17:49:05 DEBUG Finished Request
+17:49:05 DEBUG POST http://localhost:52258/session/8219da76f02653fa3aec5285e4445552/element {"using": "xpath", "value": "(//*[@slot=\"primary\"])[3]"}
+17:49:05 DEBUG http://localhost:52258 "POST /session/8219da76f02653fa3aec5285e4445552/element HTTP/1.1" 200 0
+17:49:05 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"1996E4946840C24E6EB2A07CC095B219_element_146"}} | headers=HTTPHeaderDict({'Content-Length': '96', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+17:49:05 DEBUG Finished Request
+17:49:05 DEBUG POST http://localhost:52258/session/8219da76f02653fa3aec5285e4445552/element/1996E4946840C24E6EB2A07CC095B219_element_146/click {}
+17:49:07 DEBUG http://localhost:52258 "POST /session/8219da76f02653fa3aec5285e4445552/element/1996E4946840C24E6EB2A07CC095B219_element_146/click HTTP/1.1" 200 0
+17:49:07 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+17:49:07 DEBUG Finished Request
+17:49:07 DEBUG POST http://localhost:52258/session/8219da76f02653fa3aec5285e4445552/element {"using": "xpath", "value": "(//*[@slot=\"heading\"])[2]"}
+17:49:07 DEBUG http://localhost:52258 "POST /session/8219da76f02653fa3aec5285e4445552/element HTTP/1.1" 200 0
+17:49:07 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"09BE69DE3E09CC638045E6D1000B9930_element_180"}} | headers=HTTPHeaderDict({'Content-Length': '96', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+17:49:07 DEBUG Finished Request
+17:49:07 DEBUG GET http://localhost:52258/session/8219da76f02653fa3aec5285e4445552/element/09BE69DE3E09CC638045E6D1000B9930_element_180/text {}
+17:49:07 DEBUG http://localhost:52258 "GET /session/8219da76f02653fa3aec5285e4445552/element/09BE69DE3E09CC638045E6D1000B9930_element_180/text HTTP/1.1" 200 0
+17:49:07 DEBUG Remote response: status=200 | data={"value":"National team history"} | headers=HTTPHeaderDict({'Content-Length': '33', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+17:49:07 DEBUG Finished Request
+17:49:07 DEBUG DELETE http://localhost:52258/session/8219da76f02653fa3aec5285e4445552 {}
+17:49:08 DEBUG http://localhost:52258 "DELETE /session/8219da76f02653fa3aec5285e4445552 HTTP/1.1" 200 0
+17:49:08 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+17:49:08 DEBUG Finished Request

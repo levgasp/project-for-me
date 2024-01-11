@@ -1,0 +1,54 @@
+14:05:58 DEBUG Selenium Manager binary found at: C:\Users\gaspa\PycharmProjects\pythonProject\venv\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
+14:05:58 DEBUG Executing process: C:\Users\gaspa\PycharmProjects\pythonProject\venv\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --debug --output json
+14:05:58 DEBUG chromedriver not found in PATH
+14:05:58 DEBUG chrome detected at C:\Program Files\Google\Chrome\Application\chrome.exe
+14:05:58 DEBUG Running command: wmic datafile where name='C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' get Version /value
+14:05:58 DEBUG Output: "\r\r\n\r\r\nVersion=120.0.6099.130\r\r\n\r\r\n\r\r\n\r"
+14:05:58 DEBUG Detected browser: chrome 120.0.6099.130
+14:05:58 DEBUG Required driver: chromedriver 120.0.6099.109
+14:05:58 DEBUG chromedriver 120.0.6099.109 already in the cache
+14:05:58 DEBUG Driver path: C:\Users\gaspa\.cache\selenium\chromedriver\win64\120.0.6099.109\chromedriver.exe
+14:05:58 DEBUG Browser path: C:\Program Files\Google\Chrome\Application\chrome.exe
+14:05:58 DEBUG Using driver at: C:\Users\gaspa\.cache\selenium\chromedriver\win64\120.0.6099.109\chromedriver.exe
+14:05:58 DEBUG Started executable: `C:\Users\gaspa\.cache\selenium\chromedriver\win64\120.0.6099.109\chromedriver.exe` in a child process with pid: 28800
+14:05:59 DEBUG POST http://localhost:49348/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "browserVersion": null, "goog:chromeOptions": {"extensions": [], "binary": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe", "args": ["--start-maximized"]}}}}
+14:05:59 DEBUG Starting new HTTP connection (1): localhost:49348
+14:05:59 DEBUG http://localhost:49348 "POST /session HTTP/1.1" 200 0
+14:05:59 DEBUG Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"120.0.6099.130","chrome":{"chromedriverVersion":"120.0.6099.109 (3419140ab665596f21b385ce136419fde0924272-refs/branch-heads/6099@{#1483})","userDataDir":"C:\\Users\\gaspa\\AppData\\Local\\Temp\\scoped_dir28800_483438459"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:49352"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"c8cd65e456d3bafe78375b7a72950ed7"}} | headers=HTTPHeaderDict({'Content-Length': '883', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+14:05:59 DEBUG Finished Request
+14:05:59 DEBUG POST http://localhost:49348/session/c8cd65e456d3bafe78375b7a72950ed7/timeouts {"implicit": 10000}
+14:05:59 DEBUG http://localhost:49348 "POST /session/c8cd65e456d3bafe78375b7a72950ed7/timeouts HTTP/1.1" 200 0
+14:05:59 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+14:05:59 DEBUG Finished Request
+14:05:59 DEBUG POST http://localhost:49348/session/c8cd65e456d3bafe78375b7a72950ed7/url {"url": "https://www.uefa.com/"}
+14:06:03 DEBUG http://localhost:49348 "POST /session/c8cd65e456d3bafe78375b7a72950ed7/url HTTP/1.1" 200 0
+14:06:03 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+14:06:03 DEBUG Finished Request
+14:06:03 DEBUG POST http://localhost:49348/session/c8cd65e456d3bafe78375b7a72950ed7/element {"using": "link text", "value": "National Associations"}
+14:06:03 DEBUG http://localhost:49348 "POST /session/c8cd65e456d3bafe78375b7a72950ed7/element HTTP/1.1" 200 0
+14:06:03 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"B6E55131506CCD9CC0446DD5481AE611_element_62"}} | headers=HTTPHeaderDict({'Content-Length': '95', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+14:06:03 DEBUG Finished Request
+14:06:03 DEBUG POST http://localhost:49348/session/c8cd65e456d3bafe78375b7a72950ed7/execute/sync {"script": "arguments[0].scrollIntoView();", "args": [{"element-6066-11e4-a52e-4f735466cecf": "B6E55131506CCD9CC0446DD5481AE611_element_62"}]}
+14:06:03 DEBUG http://localhost:49348 "POST /session/c8cd65e456d3bafe78375b7a72950ed7/execute/sync HTTP/1.1" 200 0
+14:06:03 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+14:06:03 DEBUG Finished Request
+14:06:03 DEBUG POST http://localhost:49348/session/c8cd65e456d3bafe78375b7a72950ed7/element/B6E55131506CCD9CC0446DD5481AE611_element_62/click {}
+14:06:06 DEBUG http://localhost:49348 "POST /session/c8cd65e456d3bafe78375b7a72950ed7/element/B6E55131506CCD9CC0446DD5481AE611_element_62/click HTTP/1.1" 200 0
+14:06:06 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+14:06:06 DEBUG Finished Request
+14:06:06 DEBUG POST http://localhost:49348/session/c8cd65e456d3bafe78375b7a72950ed7/element {"using": "css selector", "value": "[title=\"Armenia\"]"}
+14:06:06 DEBUG http://localhost:49348 "POST /session/c8cd65e456d3bafe78375b7a72950ed7/element HTTP/1.1" 200 0
+14:06:06 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"3D025C24636F82E8A3CF1A9A89DEE752_element_139"}} | headers=HTTPHeaderDict({'Content-Length': '96', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+14:06:06 DEBUG Finished Request
+14:06:06 DEBUG POST http://localhost:49348/session/c8cd65e456d3bafe78375b7a72950ed7/execute/sync {"script": "arguments[0].scrollIntoView();", "args": [{"element-6066-11e4-a52e-4f735466cecf": "3D025C24636F82E8A3CF1A9A89DEE752_element_139"}]}
+14:06:06 DEBUG http://localhost:49348 "POST /session/c8cd65e456d3bafe78375b7a72950ed7/execute/sync HTTP/1.1" 200 0
+14:06:06 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+14:06:06 DEBUG Finished Request
+14:06:06 DEBUG POST http://localhost:49348/session/c8cd65e456d3bafe78375b7a72950ed7/element/3D025C24636F82E8A3CF1A9A89DEE752_element_139/click {}
+14:06:07 DEBUG http://localhost:49348 "POST /session/c8cd65e456d3bafe78375b7a72950ed7/element/3D025C24636F82E8A3CF1A9A89DEE752_element_139/click HTTP/1.1" 400 0
+14:06:07 DEBUG Remote response: status=400 | data={"value":{"error":"element click intercepted","message":"element click intercepted: Element \u003Ca href=\"/insideuefa/national-associations/ARM/\" class=\"team-wrap\" title=\"Armenia\">...\u003C/a> is not clickable at point (411, 48). Other element would receive the click: \u003Ca class=\"navbar-lv2-item-link\" href=\"/insideuefa/national-associations/\" target=\"\" data-tracking=\"{&quot;action&quot;:&quot;Menu - Level 2 - Access ...&quot;,&quot;label&quot;:&quot;navigation&quot;,&quot;category&quot;:&quot;Click&quot;}\">National Associations\u003C/a>\n  (Session info: chrome=120.0.6099.130)","stacktrace":"\tGetHandleVerifier [0x00007FF7AE272142+3514994]\n\t(No symbol) [0x00007FF7ADE90CE2]\n\t(No symbol) [0x00007FF7ADD376AA]\n\t(No symbol) [0x00007FF7ADD888F3]\n\t(No symbol) [0x00007FF7ADD868ED]\n\t(No symbol) [0x00007FF7ADD840EC]\n\t(No symbol) [0x00007FF7ADD82EA5]\n\t(No symbol) [0x00007FF7ADD76A0F]\n\t(No symbol) [0x00007FF7ADDA5FEA]\n\t(No symbol) [0x00007FF7ADD763B6]\n\t(No symbol) [0x00007FF7ADDA6490]\n\t(No symbol) [0x00007FF7ADDC28F6]\n\t(No symbol) [0x00007FF7ADDA5D93]\n\t(No symbol) [0x00007FF7ADD74BDC]\n\t(No symbol) [0x00007FF7ADD75C64]\n\tGetHandleVerifier [0x00007FF7AE29E16B+3695259]\n\tGetHandleVerifier [0x00007FF7AE2F6737+4057191]\n\tGetHandleVerifier [0x00007FF7AE2EE4E3+4023827]\n\tGetHandleVerifier [0x00007FF7ADFC04F9+689705]\n\t(No symbol) [0x00007FF7ADE9C048]\n\t(No symbol) [0x00007FF7ADE98044]\n\t(No symbol) [0x00007FF7ADE981C9]\n\t(No symbol) [0x00007FF7ADE888C4]\n\tBaseThreadInitThunk [0x00007FFB8C587344+20]\n\tRtlUserThreadStart [0x00007FFB8D4426B1+33]\n"}} | headers=HTTPHeaderDict({'Content-Length': '1609', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+14:06:07 DEBUG Finished Request
+14:06:07 DEBUG DELETE http://localhost:49348/session/c8cd65e456d3bafe78375b7a72950ed7 {}
+14:06:07 DEBUG http://localhost:49348 "DELETE /session/c8cd65e456d3bafe78375b7a72950ed7 HTTP/1.1" 200 0
+14:06:07 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+14:06:07 DEBUG Finished Request
